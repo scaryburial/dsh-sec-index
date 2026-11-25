@@ -1,0 +1,958 @@
+{
+  "format": 1,
+  "title": {
+    "zh": "黑刃 · 渗透/爬虫/破解插件索引",
+    "en": "Blackblade index: pentest, crawler and reversing"
+  },
+  "description": {
+    "zh": "爸爸专用的 DSH 插件索引：渗透测试、红队攻防、逆向工程、安卓脱壳、爬虫采集、代码审计与模糊测试。装之前看清「需自装外部引擎」标签。",
+    "en": "Curated DSH plugin index for pentest, red team, reversing, Android unpacking, crawling, code audit and fuzzing. Read the external-engine label before installing."
+  },
+  "metadata": {
+    "categories": {
+      "pentest": {
+        "title": {
+          "zh": "渗透测试",
+          "en": "Pentest"
+        }
+      },
+      "redteam": {
+        "title": {
+          "zh": "红队攻防",
+          "en": "Red team"
+        }
+      },
+      "reverse": {
+        "title": {
+          "zh": "逆向工程",
+          "en": "Reversing"
+        }
+      },
+      "mobile": {
+        "title": {
+          "zh": "移动端",
+          "en": "Mobile"
+        }
+      },
+      "crawler": {
+        "title": {
+          "zh": "爬虫采集",
+          "en": "Crawling and scraping"
+        }
+      },
+      "audit": {
+        "title": {
+          "zh": "代码审计与漏洞情报",
+          "en": "Code audit and vuln intel"
+        }
+      },
+      "fuzz": {
+        "title": {
+          "zh": "模糊测试",
+          "en": "Fuzzing"
+        }
+      },
+      "defense": {
+        "title": {
+          "zh": "蓝队防御",
+          "en": "Blue team"
+        }
+      }
+    },
+    "labels": {
+      "外部引擎": {
+        "title": {
+          "zh": "需自装外部引擎",
+          "en": "Needs an external engine"
+        }
+      },
+      "Windows": {
+        "title": {
+          "zh": "Windows 优先",
+          "en": "Windows-first"
+        }
+      },
+      "Python": {
+        "title": {
+          "zh": "依赖 Python 环境",
+          "en": "Requires Python"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "@howmp/dsh-pentest",
+      "title": {
+        "zh": "dsh-pentest 授权渗透模式",
+        "en": "dsh-pentest authorized pentest mode"
+      },
+      "description": {
+        "zh": "授权渗透模式：用探索链路记录目标、线索、资产与漏洞，在 Web 里可视化整条打击链，从信息收集一路走到验证。",
+        "en": "Authorized pentest mode: record targets, leads, assets and findings along an exploration graph, visualized in the Web UI from recon to verification."
+      },
+      "homepage": "https://github.com/howmp/dsh-pentest",
+      "repository": {
+        "url": "https://github.com/howmp/dsh-pentest"
+      },
+      "metadata": {
+        "category": "pentest",
+        "keywords": [
+          "pentest",
+          "recon",
+          "exploit",
+          "vulnerability"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0-rc.37",
+          "publishTimestamp": 1791540692,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-pentester",
+      "title": {
+        "zh": "dsh-pentester PTES 渗透测试",
+        "en": "dsh-pentester PTES pentest suite"
+      },
+      "description": {
+        "zh": "按 PTES 阶段组织的渗透测试插件，Root-Orchestrator 架构：主控拆活、子角色执行，情报收集→漏洞验证→利用→后渗透一条链。",
+        "en": "PTES-phased pentest plugin with a Root-Orchestrator architecture: the root splits work, role agents execute, and recon to post-exploitation runs as one chain."
+      },
+      "homepage": "https://github.com/fb0sh/dsh-pentester",
+      "repository": {
+        "url": "https://github.com/fb0sh/dsh-pentester"
+      },
+      "metadata": {
+        "category": "pentest",
+        "keywords": [
+          "pentest",
+          "PTES",
+          "orchestrator",
+          "red team"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "6.5.0",
+          "publishTimestamp": 1791954218,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-redteam-mode",
+      "title": {
+        "zh": "dsh-redteam-mode 红队作战模式",
+        "en": "dsh-redteam-mode red team operation mode"
+      },
+      "description": {
+        "zh": "给一个靶标单位名称，主会话指挥五个执行角色（信息收集/资产梳理/漏洞发现/漏洞利用/内网渗透），59 个 redteam_* 工具、发现落本机 SQLite、右侧 9 页控制台含资产测绘与 POC 知识库。",
+        "en": "Give one target org name and the lead session drives five roles (recon, asset mapping, vuln discovery, exploitation, internal pivot) with 59 redteam_* tools, a local SQLite fact base and a 9-page console."
+      },
+      "homepage": "https://github.com/Jueze-2019/dsh-redteam-mode",
+      "repository": {
+        "url": "https://github.com/Jueze-2019/dsh-redteam-mode"
+      },
+      "metadata": {
+        "category": "redteam",
+        "keywords": [
+          "redteam",
+          "internal",
+          "exploit",
+          "score",
+          "poc"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.15.1",
+          "publishTimestamp": 1793162588,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-code-audit",
+      "title": {
+        "zh": "dsh-code-audit 代码审计",
+        "en": "dsh-code-audit code audit"
+      },
+      "description": {
+        "zh": "按所选提示词跑代码审计任务，跟踪漏洞与实时进度，最后导出带 PoC 请求包的专业报告。",
+        "en": "Runs code-audit tasks with a chosen prompt, tracks findings and live progress, and exports a professional report with PoC request packets."
+      },
+      "homepage": "https://github.com/mlf519/dsh-code-audit",
+      "repository": {
+        "url": "https://github.com/mlf519/dsh-code-audit"
+      },
+      "metadata": {
+        "category": "audit",
+        "keywords": [
+          "audit",
+          "vulnerability",
+          "poc",
+          "report"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.4.3",
+          "publishTimestamp": 1794963324,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-code-security",
+      "title": {
+        "zh": "dsh-code-security 代码安全工作台",
+        "en": "dsh-code-security code security workbench"
+      },
+      "description": {
+        "zh": "10 个 secure_* 工具的代码安全工作台：确定性规则加密钥熵检查、OSV 依赖漏洞审计、脱敏证据、同范围复查、Markdown/SARIF 报告，可选接 Semgrep CE / OSV-Scanner。",
+        "en": "Code security workbench with 10 secure_* tools: deterministic rules plus secret entropy checks, OSV dependency audit, redacted evidence, scoped re-review and Markdown/SARIF export, optionally backed by Semgrep CE or OSV-Scanner."
+      },
+      "homepage": "https://github.com/STARDUSTLC666/dsh-code-security",
+      "repository": {
+        "url": "https://github.com/STARDUSTLC666/dsh-code-security"
+      },
+      "metadata": {
+        "category": "audit",
+        "keywords": [
+          "security",
+          "sast",
+          "semgrep",
+          "osv",
+          "sarif",
+          "secrets"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.10.2",
+          "publishTimestamp": 1795525429,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "@pbfuzz/dsh-pbfuzz",
+      "title": {
+        "zh": "dsh-pbfuzz 定向模糊测试",
+        "en": "dsh-pbfuzz targeted fuzzing"
+      },
+      "description": {
+        "zh": "给目标仓库和一个缺陷（CVE 描述、补丁、崩溃栈或 file:line），跑 PLAN→IMPLEMENT→EXECUTE→REFLECT 循环，由模型写 Python 输入生成器，直到触发 oracle。",
+        "en": "Given a repo and a defect (CVE text, patch, crash stack or file:line), it loops PLAN/IMPLEMENT/EXECUTE/REFLECT with model-written Python input generators until the oracle fires."
+      },
+      "homepage": "https://github.com/sgzeng/dsh-pbfuzz",
+      "repository": {
+        "url": "https://github.com/sgzeng/dsh-pbfuzz"
+      },
+      "metadata": {
+        "category": "fuzz",
+        "keywords": [
+          "fuzz",
+          "cve",
+          "oracle",
+          "crash"
+        ],
+        "labels": [
+          "外部引擎"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.34",
+          "publishTimestamp": 1793842344,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "@dhicoc/dsh-reverse-skill",
+      "title": {
+        "zh": "dsh-reverse-skill 逆向技能包",
+        "en": "dsh-reverse-skill reversing skill pack"
+      },
+      "description": {
+        "zh": "整套 reverse-skill（85 个 SKILL.md）的插件封装：逆向工程、授权渗透测试与安全研究的技能路由包，模型按目标类型自动选技能。",
+        "en": "The full reverse-skill pack (85 SKILL.md files) as a plugin: a skill router for reversing, authorized pentesting and security research, picking skills by target type."
+      },
+      "homepage": "https://github.com/dhicoc/dsh-reverse-skill",
+      "repository": {
+        "url": "https://github.com/dhicoc/dsh-reverse-skill"
+      },
+      "metadata": {
+        "category": "reverse",
+        "keywords": [
+          "reverse",
+          "skill",
+          "pentest",
+          "security"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "1.0.5",
+          "publishTimestamp": 1787388214,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-reverse-plugin",
+      "title": {
+        "zh": "dsh-reverse-plugin 逆向模式预设",
+        "en": "dsh-reverse-plugin reverse preset"
+      },
+      "description": {
+        "zh": "逆向工程预设：按目标类型（Web/JS、安卓、iOS）路由技能，JS 域含 AST 解混淆、iv8 受控执行、JSVMP 恢复，并把 js-reverse-mcp 浏览器取证挂成 mcp__js-reverse__* 工具。",
+        "en": "Reversing preset that routes by target type (Web/JS, Android, iOS); the JS domain ships AST deobfuscation, controlled iv8 execution and JSVMP recovery, plus js-reverse-mcp browser forensics as mcp__js-reverse__* tools."
+      },
+      "homepage": "https://github.com/zhizhuodemao/ai-reverse-resources",
+      "repository": {
+        "url": "https://github.com/zhizhuodemao/ai-reverse-resources"
+      },
+      "metadata": {
+        "category": "reverse",
+        "keywords": [
+          "reverse",
+          "javascript",
+          "android",
+          "ios",
+          "deobfuscate",
+          "jsvmp"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.3.2",
+          "publishTimestamp": 1795015935,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-plugin-rea",
+      "title": {
+        "zh": "dsh-plugin-rea 逆向一切（REA 桥接）",
+        "en": "dsh-plugin-rea REA bridge"
+      },
+      "description": {
+        "zh": "把上游 REA（逆向一切）的 MCP 服务接进 DSH，提供 mcp__rea__* 工具；2.x 自带供给，把 Node、REA CLI、JDK、Ghidra 装到插件目录，干净机器一次 setup 即可用。覆盖原生二进制、Electron、.NET、网站、APK 与 adb、固件。",
+        "en": "Bridges upstream REA MCP into DSH as mcp__rea__* tools; 2.x self-provisions Node, the REA CLI, JDK and Ghidra, covering native binaries, Electron, .NET, web apps, APKs and adb, firmware."
+      },
+      "homepage": "https://github.com/czcdr/dsh-plugin-rea",
+      "repository": {
+        "url": "https://github.com/czcdr/dsh-plugin-rea"
+      },
+      "metadata": {
+        "category": "reverse",
+        "keywords": [
+          "rea",
+          "ghidra",
+          "ida",
+          "hopper",
+          "apk",
+          "binary"
+        ],
+        "labels": [
+          "外部引擎",
+          "Windows"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "2.0.18",
+          "publishTimestamp": 1794573726,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-rea-dispatcher",
+      "title": {
+        "zh": "dsh-rea-dispatcher REA 网关",
+        "en": "dsh-rea-dispatcher REA dispatcher"
+      },
+      "description": {
+        "zh": "把 REA 的 207 个逆向工具折叠成 3 条命令加 6 个只读域入口，常驻约 5 KB：不代装引擎，需自备 rea-agents、Ghidra 12.1.x 与 JDK 21。",
+        "en": "Collapses REA's 207 reversing tools into 3 commands plus 6 read-only domain entries at about 5 KB resident; brings no engine, so install rea-agents, Ghidra 12.1.x and JDK 21 yourself."
+      },
+      "homepage": "https://github.com/HarunaTyan/dsh-rea-dispatcher",
+      "repository": {
+        "url": "https://github.com/HarunaTyan/dsh-rea-dispatcher"
+      },
+      "metadata": {
+        "category": "reverse",
+        "keywords": [
+          "rea",
+          "dispatcher",
+          "context"
+        ],
+        "labels": [
+          "外部引擎"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "1.3.1",
+          "publishTimestamp": 1793530731,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-re-workbench",
+      "title": {
+        "zh": "dsh-re-workbench IDA 逆向工作台",
+        "en": "dsh-re-workbench IDA workbench"
+      },
+      "description": {
+        "zh": "通过 MCP 桥接本机 IDA Pro：反编译、xref、重命名、注释全部注册成 mcp__ida__*；自动选 idalib 无头模式（进程内分析）或 GUI 模式（RPC 13337），另附 re_check/re_open/re_status。",
+        "en": "Bridges local IDA Pro over MCP: decompile, xref, rename and comment as mcp__ida__* tools, auto-selecting idalib headless mode or GUI RPC on 13337, plus re_check/re_open/re_status."
+      },
+      "homepage": "https://github.com/wxlei2004/dsh-plugins",
+      "repository": {
+        "url": "https://github.com/wxlei2004/dsh-plugins",
+        "directory": "packages/re-workbench"
+      },
+      "metadata": {
+        "category": "reverse",
+        "keywords": [
+          "ida",
+          "idalib",
+          "xref",
+          "decompile",
+          "mcp"
+        ],
+        "labels": [
+          "外部引擎",
+          "Windows"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1790759926,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-skill-apk-reverse",
+      "title": {
+        "zh": "dsh-skill-apk-reverse 安卓 APK 逆向",
+        "en": "dsh-skill-apk-reverse APK reversing"
+      },
+      "description": {
+        "zh": "手机端 Android APK 逆向技能：jadx/apktool 解码、广告 SDK 与权益逻辑定位、smali/数值补丁、重打包对齐签名、真机验证；工具链跑在手机 proot Ubuntu 或电脑 Linux。",
+        "en": "Android APK reversing skill: jadx/apktool decode, ad-SDK and entitlement logic hunting, smali/numeric patching, repack-align-sign, and on-device verification on proot Ubuntu or Linux."
+      },
+      "homepage": "https://github.com/xiaotianya14/apk-reverse-skill",
+      "repository": {
+        "url": "https://github.com/xiaotianya14/apk-reverse-skill"
+      },
+      "metadata": {
+        "category": "mobile",
+        "keywords": [
+          "apk",
+          "jadx",
+          "apktool",
+          "smali",
+          "frida"
+        ],
+        "labels": [
+          "外部引擎"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.8.0",
+          "publishTimestamp": 1795090127,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "@windypro-rourou/dsh-logcat",
+      "title": {
+        "zh": "dsh-logcat 安卓实机调试台",
+        "en": "dsh-logcat Android live debug bench"
+      },
+      "description": {
+        "zh": "DSH Web GUI 里的安卓实机工作台：自动附加 logcat（级别/关键词过滤、崩溃快照）、真机投屏与远程点击滑动打字、内存/进程/frida 逆向工具链，共 30 个 agent 工具。",
+        "en": "Android live-device workbench in the DSH Web GUI: auto-attached logcat with filters and crash snapshots, screen mirroring with remote tap/swipe/type, and memory/process/frida tooling across 30 agent tools."
+      },
+      "homepage": "https://github.com/WindyPro-rourou/dsh-logcat",
+      "repository": {
+        "url": "https://github.com/WindyPro-rourou/dsh-logcat"
+      },
+      "metadata": {
+        "category": "mobile",
+        "keywords": [
+          "logcat",
+          "adb",
+          "frida",
+          "screen"
+        ],
+        "labels": [
+          "外部引擎",
+          "Windows"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.9.5",
+          "publishTimestamp": 1794396105,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "@jayyuen66/dsh-scrapling",
+      "title": {
+        "zh": "dsh-scrapling 反反爬采集",
+        "en": "dsh-scrapling anti-bot scraping"
+      },
+      "description": {
+        "zh": "把 Scrapling 包成最多 19 个工具：真实浏览器渲染 JS 页面、CSS/XPath 提结构化数据、选择器自愈、带 XHR 抓取与网络历史的登录态会话、截图下载、限定域爬虫（content/sitemap/feed/Shopify）。需 Python 3.14+ 与 patchright Chromium。",
+        "en": "Wraps Scrapling into up to 19 tools: real-browser JS rendering, CSS/XPath structured extraction, selector self-healing, logged-in sessions with XHR and network history, screenshots, downloads and scoped crawlers."
+      },
+      "homepage": "https://github.com/JayYuen666/dsh-scrapling",
+      "repository": {
+        "url": "https://github.com/JayYuen666/dsh-scrapling"
+      },
+      "metadata": {
+        "category": "crawler",
+        "keywords": [
+          "crawler",
+          "scrapling",
+          "stealth",
+          "session",
+          "spider"
+        ],
+        "labels": [
+          "Python"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.17",
+          "publishTimestamp": 1795533588,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-mcp-firecrawl",
+      "title": {
+        "zh": "dsh-mcp-firecrawl 抓取与站点地图",
+        "en": "dsh-mcp-firecrawl scrape and sitemap"
+      },
+      "description": {
+        "zh": "接 Firecrawl 托管 MCP：免密钥即可用搜索、抓取与解析（有每日额度），配 API Key 后解锁完整工具集，含批量爬取与站点地图。",
+        "en": "Connects the hosted Firecrawl MCP: keyless search, scrape and parse within a daily quota; with an API key the full toolset unlocks, including bulk crawl and sitemap."
+      },
+      "homepage": "https://github.com/PyModel/dsh-research-plugins",
+      "repository": {
+        "url": "https://github.com/PyModel/dsh-research-plugins",
+        "directory": "packages/dsh-mcp-firecrawl"
+      },
+      "metadata": {
+        "category": "crawler",
+        "keywords": [
+          "crawl",
+          "scrape",
+          "firecrawl",
+          "sitemap",
+          "mcp"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.3.0",
+          "publishTimestamp": 1792107942,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-firecrawl",
+      "title": {
+        "zh": "dsh-firecrawl URL 转 Markdown",
+        "en": "dsh-firecrawl URL to Markdown"
+      },
+      "description": {
+        "zh": "用 Firecrawl Cloud API 把任意 URL 抓成 LLM 可吃的干净 Markdown，或搜索网页并直接返回结果正文，接入成本最低的一个。",
+        "en": "Turns any URL into clean LLM-ready Markdown over the Firecrawl Cloud API, or searches the web and returns result bodies directly; the lightest option here."
+      },
+      "homepage": "https://github.com/zoahdev/dsh-firecrawl",
+      "repository": {
+        "url": "https://github.com/zoahdev/dsh-firecrawl"
+      },
+      "metadata": {
+        "category": "crawler",
+        "keywords": [
+          "scrape",
+          "markdown",
+          "firecrawl",
+          "search"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1786955388,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-keyless-search",
+      "title": {
+        "zh": "dsh-keyless-search 免密钥搜索/Bing 抓取",
+        "en": "dsh-keyless-search keyless search and Bing"
+      },
+      "description": {
+        "zh": "给内置 web_search 注册免密钥搜索提供方：Tavily 与 Firecrawl 免费通道自动降级，有 Key 则自动采用；另含两个 Bing 抓取后端（默认关闭）。",
+        "en": "Registers keyless search providers for the built-in web_search, falling back between Tavily and Firecrawl free channels and using your keys when present; two Bing scraping backends ship disabled."
+      },
+      "homepage": "https://github.com/OzzyDeng-JunDeng/dsh-keyless-search",
+      "repository": {
+        "url": "https://github.com/OzzyDeng-JunDeng/dsh-keyless-search"
+      },
+      "metadata": {
+        "category": "crawler",
+        "keywords": [
+          "search",
+          "bing",
+          "tavily",
+          "firecrawl",
+          "keyless"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.1",
+          "publishTimestamp": 1791903406,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-blue-team-mode",
+      "title": {
+        "zh": "dsh-blue-team-mode 蓝队防御",
+        "en": "dsh-blue-team-mode blue team defense"
+      },
+      "description": {
+        "zh": "CTF 网络攻防蓝队模式：66 个防御工具、12 个控制台页签、17 张 SQLite 事实库表、六个执行角色，ATT&CK 规则映射、高风险审批与审计、哈希链时间线与 Ed25519 证据、诱饵欺骗、CVE 防御包。",
+        "en": "CTF blue-team defense mode: 66 defensive tools, 12 console tabs, 17 SQLite fact tables and six roles, with ATT&CK mapping, approval and audit of risky tasks, hash-chained timelines and Ed25519 evidence, deception and CVE defense packs."
+      },
+      "homepage": "https://github.com/FGCGDroid/dsh-blue-team-mode",
+      "repository": {
+        "url": "https://github.com/FGCGDroid/dsh-blue-team-mode"
+      },
+      "metadata": {
+        "category": "defense",
+        "keywords": [
+          "blue team",
+          "att&ck",
+          "ctf",
+          "detection"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "2.0.0",
+          "publishTimestamp": 1794907444,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-security-advisory-check",
+      "title": {
+        "zh": "dsh-security-advisory-check 安全公告核查",
+        "en": "dsh-security-advisory-check advisory check"
+      },
+      "description": {
+        "zh": "核查安全公告的关键字段：CVE/GHSA 编号、写死的严重程度、受影响版本范围、修复版本、缓解办法与披露日期；散文里的严重不算等级，没版本号的请升级不算修复版本。",
+        "en": "Checks an advisory's hard facts: CVE/GHSA id, stated severity, affected ranges, fixed version, mitigations and disclosure date; prose severity is not a severity and a version-less upgrade request is not a fixed version."
+      },
+      "homepage": "https://github.com/zjukop3/dsh-vertical-kit",
+      "repository": {
+        "url": "https://github.com/zjukop3/dsh-vertical-kit",
+        "directory": "packages/dsh-security-advisory-check"
+      },
+      "metadata": {
+        "category": "audit",
+        "keywords": [
+          "cve",
+          "ghsa",
+          "advisory",
+          "intel"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.4",
+          "publishTimestamp": 1795414756,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-redteam-model",
+      "title": {
+        "zh": "dsh-redteam-model 九模式红队合集",
+        "en": "dsh-redteam-model nine-mode red team suite"
+      },
+      "description": {
+        "zh": "面向授权安全研究的合集：九个工作模式（redteam 总控、渗透测试、代码审计、二进制分析、攻防评估、免杀对抗、应急溯源、云安全攻防、CTF 解题）加十五个运行时插件，设置页可一键部署安装更新卸载。",
+        "en": "An authorized-research suite: nine working modes (red team lead, pentest, code audit, binary analysis, attack-defense assessment, evasion research, incident tracing, cloud offense, CTF) plus fifteen runtime plugins with one-click deploy/install/update/uninstall."
+      },
+      "homepage": "https://github.com/SeaOf0/dsh-redteam-model",
+      "repository": {
+        "url": "https://github.com/SeaOf0/dsh-redteam-model"
+      },
+      "metadata": {
+        "category": "redteam",
+        "keywords": [
+          "redteam",
+          "pentest",
+          "audit",
+          "binary",
+          "ctf",
+          "evasion"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.0.0-git.ce24bb2",
+          "publishTimestamp": 1795500000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/SeaOf0/dsh-redteam-model",
+            "commit": "ce24bb25e35df8c8514e00e0d98f1a36d2e2a562"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-hawkeye-scan",
+      "title": {
+        "zh": "dsh-hawkeye-scan 源码安全扫描",
+        "en": "dsh-hawkeye-scan source scanner"
+      },
+      "description": {
+        "zh": "AI 驱动的源代码安全扫描工作台：5 个模型工具（start/finding/status/report/list）、/hawkeye 面板与 JSON/Markdown/HTML 漏洞报告，零依赖 Cordis 插件。",
+        "en": "AI-driven source code security workbench: 5 model tools (start/finding/status/report/list), a /hawkeye panel and JSON/Markdown/HTML vuln reports as a zero-dependency Cordis plugin."
+      },
+      "homepage": "https://github.com/liuqingman/dsh-hawkeye-scan",
+      "repository": {
+        "url": "https://github.com/liuqingman/dsh-hawkeye-scan",
+        "directory": "npm"
+      },
+      "metadata": {
+        "category": "audit",
+        "keywords": [
+          "scanner",
+          "vuln",
+          "report"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.0.0-git.e816da8",
+          "publishTimestamp": 1795500000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/liuqingman/dsh-hawkeye-scan",
+            "commit": "e816da8175004c9880fa9769e5a0b9cee1f547aa",
+            "path": "npm"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-dep-vuln-scan",
+      "title": {
+        "zh": "dsh-dep-vuln-scan 依赖漏洞扫描",
+        "en": "dsh-dep-vuln-scan dependency vuln scan"
+      },
+      "description": {
+        "zh": "扫项目锁文件（npm/pnpm/yarn/pip/go/cargo/maven/gradle 等）并批量查免费 OSV API，输出包 / 当前版本 / 漏洞 ID / 摘要 / CVSS / 修复版本表与修复命令。",
+        "en": "Scans project lockfiles (npm/pnpm/yarn/pip/go/cargo/maven/gradle and more) against the free OSV API and prints package, current version, vuln id, summary, CVSS and fixed version plus fix commands."
+      },
+      "homepage": "https://github.com/988hj7tczd-oss/dsh-dep-vuln-scan",
+      "repository": {
+        "url": "https://github.com/988hj7tczd-oss/dsh-dep-vuln-scan"
+      },
+      "metadata": {
+        "category": "audit",
+        "keywords": [
+          "osv",
+          "dependency",
+          "cve",
+          "lockfile"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.0.0-git.db879fc",
+          "publishTimestamp": 1795500000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/988hj7tczd-oss/dsh-dep-vuln-scan",
+            "commit": "db879fc01cd02b9f0821a87ba728a310ae08d9ac"
+          },
+          "engines": {}
+        }
+      ]
+    },
+    {
+      "name": "dsh-scrapling",
+      "title": {
+        "zh": "dsh-scrapling 反反爬技能包",
+        "en": "dsh-scrapling anti-bot skill pack"
+      },
+      "description": {
+        "zh": "把官方 Scrapling 技能包进 profile：反反爬绕过、隐身浏览、spiders 框架、自适应解析与 JS 渲染，走宿主技能目录发现，不额外起服务。",
+        "en": "Packs the official Scrapling skill into the profile: anti-bot evasion, stealth browsing, the spiders framework, adaptive parsing and JS rendering, discovered through the host skill directory."
+      },
+      "homepage": "https://github.com/NickyWooden/dsh-scrapling",
+      "repository": {
+        "url": "https://github.com/NickyWooden/dsh-scrapling"
+      },
+      "metadata": {
+        "category": "crawler",
+        "keywords": [
+          "scrapling",
+          "stealth",
+          "spider",
+          "skill"
+        ],
+        "labels": [
+          "Python"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.0.0-git.3261f86",
+          "publishTimestamp": 1795500000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/NickyWooden/dsh-scrapling",
+            "commit": "3261f8645eab3f15b43968b677761de86999512e"
+          },
+          "engines": {}
+        }
+      ]
+    }
+  ]
+}
